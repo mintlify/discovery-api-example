@@ -90,7 +90,7 @@ export default function Component() {
                 onGeneratingErrorRetry={() => onSendRetryQuery(i)}
                 openCitationInSameTab={false}
                 onCitationClick={() => {}}
-                apiKey={'mint_dsc_YOUR_KEY_GOES_HERE'}
+                apiKey={process.env.NEXT_PUBLIC_DISCOVERY_API_KEY ?? ''}
                 url={undefined}
               />
             ))
